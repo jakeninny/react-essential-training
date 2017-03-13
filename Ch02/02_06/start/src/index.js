@@ -1,10 +1,11 @@
-const { render } = ReactDOM
+import React from 'react';
+import { render } from 'react-dom';
+import { hello, goodbye } from './lib.js';
 
 render(
-	<h1 id='title'
-		className='header'
-		style={{backgroundColor: 'orange', color: 'white', fontFamily: 'verdana'}}>
-	Fuck this world!!	
-	</h1>,
+	<div>
+		{hello}
+		{goodbye}
+	</div>,
 	document.getElementById('react-container')
 )
